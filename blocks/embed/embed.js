@@ -5,6 +5,6 @@ export default function decorate(block) {
   iframe.width = '100%';
   iframe.height = '600';
   iframe.src =new URL(block.textContent);
-  //block.textContent ='';
+  block.textContent ='';
   block.append(iframe);
 }
