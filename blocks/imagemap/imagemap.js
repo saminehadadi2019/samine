@@ -2,7 +2,7 @@ import { createOptimizedPicture } from '../../scripts/lib-franklin.js';
 
 export default function decorate(block) {
   const text = block.textContent;
- //const text = "src=https://i.ibb.co/S393wpr/map.png;alt=carpet map;shape=circle;coord=200,200,90;alert=area 1;shape=circle;coord=780,780,140;alert=area 2;";
+ //const text = "src=https://i.ibb.co/S393wpr/map.png;alt=carpet map;shape=circle;coord=200,200,90;alert=area 1;url='https://www.persianrugs.com.au/tabriz/';shape=circle;coord=780,780,140;alert=area 2;url='https://www.persianrugs.com.au/tabriz/'";
   block.textContent = '';
   text.replace(/\s/g, '').trim;
   const srcRegex = /src=\s*([^;]+);/;
