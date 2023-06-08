@@ -46,10 +46,13 @@ export default function decorate(block) {
     area.shape = shapes[i];
     area.coords = coords[i];
     area.addEventListener('click', () => {
-      alert(messages[i]);
+      if(messages[i])
+        alert(messages[i]);
     });
     area.style.borderBlockColor = 'red';
     area.href = urls[i];
+    area.target ="_blank";
+
     map.append(area);
   }
  
