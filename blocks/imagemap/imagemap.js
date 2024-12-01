@@ -56,8 +56,8 @@ export default function decorate(block) {
     map.append(area);
   }
  
-  block.appendChild(image);
-  block.appendChild(map);
+  block.append(image);
+  block.append(map);
 
 }
 
